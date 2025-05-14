@@ -274,4 +274,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainMenuMusic: {fileID: 8300000, guid: b12cb9a0375cb694882049c781982cf2, type: 3}
   level1Music: {fileID: 8300000, guid: 1445844f7ba0a4e4aa58e0affce1fb4f, type: 3}
-  level2Music: {fileID: 8300000, guid: f9e3b72680cb3ba45bcd29459f1b7a7c, type: 3}
+  level2Music: {fileID: 8300000, guid: ea4957fa23fdccb479c13dc7c1ebdd61, type: 3}
+  creditsMusic: {fileID: 8300000, guid: c4a5bfb3059372c4898baac0ef1c48df, type: 3}

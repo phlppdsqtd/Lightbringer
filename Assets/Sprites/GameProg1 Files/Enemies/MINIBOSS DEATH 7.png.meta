@@ -1,0 +1,1534 @@
+fileFormatVersion: 2
+guid: 03b510960de40244aa9ea3e37fc5631b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2869792153507357775
+    second: MINIBOSS DEATH 7_0
+  - first:
+      213: -7528783523513382641
+    second: MINIBOSS DEATH 7_1
+  - first:
+      213: 1648006798922728315
+    second: MINIBOSS DEATH 7_2
+  - first:
+      213: 6879766887934127043
+    second: MINIBOSS DEATH 7_3
+  - first:
+      213: -5606304487173735001
+    second: MINIBOSS DEATH 7_4
+  - first:
+      213: -5711167072912748232
+    second: MINIBOSS DEATH 7_5
+  - first:
+      213: -7863918288269684920
+    second: MINIBOSS DEATH 7_6
+  - first:
+      213: 8944890064758988251
+    second: MINIBOSS DEATH 7_7
+  - first:
+      213: 4968633909298340562
+    second: MINIBOSS DEATH 7_8
+  - first:
+      213: 5751758709390257802
+    second: MINIBOSS DEATH 7_9
+  - first:
+      213: 1807873467708955128
+    second: MINIBOSS DEATH 7_10
+  - first:
+      213: 4833566351675240441
+    second: MINIBOSS DEATH 7_11
+  - first:
+      213: -6157698509603729044
+    second: MINIBOSS DEATH 7_12
+  - first:
+      213: 5305317379976314541
+    second: MINIBOSS DEATH 7_13
+  - first:
+      213: -2757512997362780142
+    second: MINIBOSS DEATH 7_14
+  - first:
+      213: 3095544489804108352
+    second: MINIBOSS DEATH 7_15
+  - first:
+      213: 7660868886221272860
+    second: MINIBOSS DEATH 7_16
+  - first:
+      213: 8380231830045631249
+    second: MINIBOSS DEATH 7_17
+  - first:
+      213: -3799606408523769145
+    second: MINIBOSS DEATH 7_18
+  - first:
+      213: -7963787882918179651
+    second: MINIBOSS DEATH 7_19
+  - first:
+      213: 3862140793539796440
+    second: MINIBOSS DEATH 7_20
+  - first:
+      213: -6128133257813627679
+    second: MINIBOSS DEATH 7_21
+  - first:
+      213: 7273399715038483404
+    second: MINIBOSS DEATH 7_22
+  - first:
+      213: 3948600046144515313
+    second: MINIBOSS DEATH 7_23
+  - first:
+      213: -5301246672537238306
+    second: MINIBOSS DEATH 7_24
+  - first:
+      213: 5908100111815598887
+    second: MINIBOSS DEATH 7_25
+  - first:
+      213: -3342032095977784903
+    second: MINIBOSS DEATH 7_26
+  - first:
+      213: 6179169210460705891
+    second: MINIBOSS DEATH 7_27
+  - first:
+      213: 4077884262263838804
+    second: MINIBOSS DEATH 7_28
+  - first:
+      213: -2608825112476016016
+    second: MINIBOSS DEATH 7_29
+  - first:
+      213: -2148554907751973744
+    second: MINIBOSS DEATH 7_30
+  - first:
+      213: -2393297357275630041
+    second: MINIBOSS DEATH 7_31
+  - first:
+      213: 6231387789170559570
+    second: MINIBOSS DEATH 7_32
+  - first:
+      213: -3098299704429000679
+    second: MINIBOSS DEATH 7_33
+  - first:
+      213: 3337164626089080192
+    second: MINIBOSS DEATH 7_34
+  - first:
+      213: 7018993622889405765
+    second: MINIBOSS DEATH 7_35
+  - first:
+      213: 1483872395827923071
+    second: MINIBOSS DEATH 7_36
+  - first:
+      213: -6278816188517181084
+    second: MINIBOSS DEATH 7_37
+  - first:
+      213: -3313209199812680634
+    second: MINIBOSS DEATH 7_38
+  - first:
+      213: 6660911788138151198
+    second: MINIBOSS DEATH 7_39
+  - first:
+      213: -9221655948822047729
+    second: MINIBOSS DEATH 7_40
+  - first:
+      213: -2994644117921509987
+    second: MINIBOSS DEATH 7_41
+  - first:
+      213: 6973518162566011253
+    second: MINIBOSS DEATH 7_42
+  - first:
+      213: -7488448198609999923
+    second: MINIBOSS DEATH 7_43
+  - first:
+      213: -3667908871035282897
+    second: MINIBOSS DEATH 7_44
+  - first:
+      213: -8335029743666893421
+    second: MINIBOSS DEATH 7_45
+  - first:
+      213: -2421976341090077117
+    second: MINIBOSS DEATH 7_46
+  - first:
+      213: -209033817619367791
+    second: MINIBOSS DEATH 7_47
+  - first:
+      213: 3761359382068986753
+    second: MINIBOSS DEATH 7_48
+  - first:
+      213: -1623478690464177051
+    second: MINIBOSS DEATH 7_49
+  - first:
+      213: -4652863224949484516
+    second: MINIBOSS DEATH 7_50
+  - first:
+      213: 6708355355059869724
+    second: MINIBOSS DEATH 7_51
+  - first:
+      213: 9076709820621290487
+    second: MINIBOSS DEATH 7_52
+  - first:
+      213: -1461869288261654738
+    second: MINIBOSS DEATH 7_53
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_0
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 194
+        width: 57
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bb9dfebd337c28d0800000000000000
+      internalID: -2869792153507357775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_1
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 150
+        width: 39
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09cb2a4643648790800000000000000
+      internalID: -7528783523513382641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_2
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 136
+        width: 28
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b73c73db375eed610800000000000000
+      internalID: 1648006798922728315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_3
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 201
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cbeec4b887d97f50800000000000000
+      internalID: 6879766887934127043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_4
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 219
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7adb45bb5c76232b0800000000000000
+      internalID: -5606304487173735001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_5
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 209
+        width: 15
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 831d0266ecbddb0b0800000000000000
+      internalID: -5711167072912748232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_6
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 61
+        width: 49
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84fccfc4bffbdd290800000000000000
+      internalID: -7863918288269684920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_7
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 133
+        width: 33
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdd51e03f12a22c70800000000000000
+      internalID: 8944890064758988251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_8
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 189
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d220be273224f440800000000000000
+      internalID: 4968633909298340562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_9
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 186
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e27f2721a52df40800000000000000
+      internalID: 5751758709390257802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_10
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 41
+        width: 56
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f955a1275bd61910800000000000000
+      internalID: 1807873467708955128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_11
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 170
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ff22edccf6441340800000000000000
+      internalID: 4833566351675240441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_12
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 148
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c611e1594d57b8aa0800000000000000
+      internalID: -6157698509603729044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_13
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 154
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daeb13e5c0640a940800000000000000
+      internalID: 5305317379976314541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_14
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 164
+        width: 18
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2183ba0f9885bb9d0800000000000000
+      internalID: -2757512997362780142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_15
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 131
+        width: 24
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0421135005595fa20800000000000000
+      internalID: 3095544489804108352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_16
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 120
+        width: 34
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c17bf0ab9afd05a60800000000000000
+      internalID: 7660868886221272860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_17
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 78
+        width: 33
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 113aa45f2709c4470800000000000000
+      internalID: 8380231830045631249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_18
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 132
+        width: 16
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ca94a54a16154bc0800000000000000
+      internalID: -3799606408523769145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_19
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 145
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbc0a1c4d11fa7190800000000000000
+      internalID: -7963787882918179651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_20
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 142
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dd1c77d694199530800000000000000
+      internalID: 3862140793539796440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_21
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 129
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ece2cf254f74faa0800000000000000
+      internalID: -6128133257813627679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_22
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 121
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc3db44318e40f460800000000000000
+      internalID: 7273399715038483404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_23
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 108
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fce88642de3cc630800000000000000
+      internalID: 3948600046144515313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_24
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 112
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed442b01d303e66b0800000000000000
+      internalID: -5301246672537238306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_25
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 102
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 723e63ecfb9cdf150800000000000000
+      internalID: 5908100111815598887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_26
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 111
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b93a4bf387be91d0800000000000000
+      internalID: -3342032095977784903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_27
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 34
+        width: 63
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3649a8488a1d0c550800000000000000
+      internalID: 6179169210460705891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_28
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 73
+        width: 14
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4585467812e879830800000000000000
+      internalID: 4077884262263838804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_29
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 97
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 072afb1e1679bcbd0800000000000000
+      internalID: -2608825112476016016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_30
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 96
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c7507e1bcce22e0800000000000000
+      internalID: -2148554907751973744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_31
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 90
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72674b9dbbc49ced0800000000000000
+      internalID: -2393297357275630041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_32
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 77
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25ac73fcd265a7650800000000000000
+      internalID: 6231387789170559570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_33
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 88
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 918cfc595d0a005d0800000000000000
+      internalID: -3098299704429000679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_34
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 55
+        width: 18
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 085f90fdb8dff4e20800000000000000
+      internalID: 3337164626089080192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_35
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 54
+        width: 15
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54d1e050389786160800000000000000
+      internalID: 7018993622889405765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_36
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 62
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f78c4550516c79410800000000000000
+      internalID: 1483872395827923071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_37
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 47
+        width: 28
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469167171f92dd8a0800000000000000
+      internalID: -6278816188517181084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_38
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 68
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 644eb9279cd1502d0800000000000000
+      internalID: -3313209199812680634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_39
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 60
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1dbf24faff407c50800000000000000
+      internalID: 6660911788138151198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_40
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 46
+        width: 22
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f041891e5c8160080800000000000000
+      internalID: -9221655948822047729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_41
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 51
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9d43928a03e076d0800000000000000
+      internalID: -2994644117921509987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_42
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 37
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5795b7252d9e6c060800000000000000
+      internalID: 6973518162566011253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_43
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 50
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc7efe2f900b31890800000000000000
+      internalID: -7488448198609999923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_44
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 21
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2a1071b058f81dc0800000000000000
+      internalID: -3667908871035282897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_45
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 19
+        width: 11
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39d6b68eb96045c80800000000000000
+      internalID: -8335029743666893421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_46
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 27
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 346fce69959636ed0800000000000000
+      internalID: -2421976341090077117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_47
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 20
+        width: 10
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198f0c2b9dc591df0800000000000000
+      internalID: -209033817619367791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_48
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 14
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1830ec0fd68033430800000000000000
+      internalID: 3761359382068986753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_49
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 27
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 564677a8bbe3879e0800000000000000
+      internalID: -1623478690464177051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_50
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 13
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1458608c85bd6fb0800000000000000
+      internalID: -4652863224949484516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_51
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 16
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c18de6d27add81d50800000000000000
+      internalID: 6708355355059869724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_52
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 19
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7fb7e6bcd73f6fd70800000000000000
+      internalID: 9076709820621290487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MINIBOSS DEATH 7_53
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 24
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e276c1da0a566bbe0800000000000000
+      internalID: -1461869288261654738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MINIBOSS DEATH 7_0: -2869792153507357775
+      MINIBOSS DEATH 7_1: -7528783523513382641
+      MINIBOSS DEATH 7_10: 1807873467708955128
+      MINIBOSS DEATH 7_11: 4833566351675240441
+      MINIBOSS DEATH 7_12: -6157698509603729044
+      MINIBOSS DEATH 7_13: 5305317379976314541
+      MINIBOSS DEATH 7_14: -2757512997362780142
+      MINIBOSS DEATH 7_15: 3095544489804108352
+      MINIBOSS DEATH 7_16: 7660868886221272860
+      MINIBOSS DEATH 7_17: 8380231830045631249
+      MINIBOSS DEATH 7_18: -3799606408523769145
+      MINIBOSS DEATH 7_19: -7963787882918179651
+      MINIBOSS DEATH 7_2: 1648006798922728315
+      MINIBOSS DEATH 7_20: 3862140793539796440
+      MINIBOSS DEATH 7_21: -6128133257813627679
+      MINIBOSS DEATH 7_22: 7273399715038483404
+      MINIBOSS DEATH 7_23: 3948600046144515313
+      MINIBOSS DEATH 7_24: -5301246672537238306
+      MINIBOSS DEATH 7_25: 5908100111815598887
+      MINIBOSS DEATH 7_26: -3342032095977784903
+      MINIBOSS DEATH 7_27: 6179169210460705891
+      MINIBOSS DEATH 7_28: 4077884262263838804
+      MINIBOSS DEATH 7_29: -2608825112476016016
+      MINIBOSS DEATH 7_3: 6879766887934127043
+      MINIBOSS DEATH 7_30: -2148554907751973744
+      MINIBOSS DEATH 7_31: -2393297357275630041
+      MINIBOSS DEATH 7_32: 6231387789170559570
+      MINIBOSS DEATH 7_33: -3098299704429000679
+      MINIBOSS DEATH 7_34: 3337164626089080192
+      MINIBOSS DEATH 7_35: 7018993622889405765
+      MINIBOSS DEATH 7_36: 1483872395827923071
+      MINIBOSS DEATH 7_37: -6278816188517181084
+      MINIBOSS DEATH 7_38: -3313209199812680634
+      MINIBOSS DEATH 7_39: 6660911788138151198
+      MINIBOSS DEATH 7_4: -5606304487173735001
+      MINIBOSS DEATH 7_40: -9221655948822047729
+      MINIBOSS DEATH 7_41: -2994644117921509987
+      MINIBOSS DEATH 7_42: 6973518162566011253
+      MINIBOSS DEATH 7_43: -7488448198609999923
+      MINIBOSS DEATH 7_44: -3667908871035282897
+      MINIBOSS DEATH 7_45: -8335029743666893421
+      MINIBOSS DEATH 7_46: -2421976341090077117
+      MINIBOSS DEATH 7_47: -209033817619367791
+      MINIBOSS DEATH 7_48: 3761359382068986753
+      MINIBOSS DEATH 7_49: -1623478690464177051
+      MINIBOSS DEATH 7_5: -5711167072912748232
+      MINIBOSS DEATH 7_50: -4652863224949484516
+      MINIBOSS DEATH 7_51: 6708355355059869724
+      MINIBOSS DEATH 7_52: 9076709820621290487
+      MINIBOSS DEATH 7_53: -1461869288261654738
+      MINIBOSS DEATH 7_6: -7863918288269684920
+      MINIBOSS DEATH 7_7: 8944890064758988251
+      MINIBOSS DEATH 7_8: 4968633909298340562
+      MINIBOSS DEATH 7_9: 5751758709390257802
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

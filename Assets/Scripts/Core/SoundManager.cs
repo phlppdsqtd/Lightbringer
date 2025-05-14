@@ -11,6 +11,7 @@ public class SoundManager : MonoBehaviour
     [SerializeField] private AudioClip mainMenuMusic;
     [SerializeField] private AudioClip level1Music;
     [SerializeField] private AudioClip level2Music;
+    [SerializeField] private AudioClip creditsMusic;
 
     private void Awake()
     {
@@ -56,6 +57,9 @@ public class SoundManager : MonoBehaviour
                 break;
             case "Level2":
                 PlayMusic(level2Music);
+                break;
+            case "Credits":
+                PlayMusic(creditsMusic);
                 break;
             // place cases for other levels here
             default:

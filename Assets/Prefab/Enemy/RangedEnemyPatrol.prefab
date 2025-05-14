@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3923508709933462680}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: RightEdge
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -126,7 +126,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3534853519987452341}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: LeftEdge
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -347,7 +347,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCooldown: 2
   range: 10
-  damage: 1
   firepoint: {fileID: 721920865449005835}
   fireballs:
   - {fileID: 5450620785004067273}
@@ -389,13 +388,13 @@ GameObject:
   m_Component:
   - component: {fileID: 3083336733798415017}
   - component: {fileID: 1946505804388972905}
-  m_Layer: 11
+  m_Layer: 0
   m_Name: RangedEnemyPatrol
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3083336733798415017
 Transform:
   m_ObjectHideFlags: 0
