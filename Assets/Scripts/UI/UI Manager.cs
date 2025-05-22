@@ -6,11 +6,11 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour
 {
-    [Header ("Game Over")]
+    [Header("Game Over")]
     [SerializeField] private GameObject gameOverScreen;
     [SerializeField] private AudioClip gameOverSound;
 
-    [Header ("Pause")]
+    [Header("Pause")]
     [SerializeField] private GameObject pauseScreen;
 
     [Header("Dialogue")]
@@ -48,7 +48,13 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMPro.TextMeshProUGUI awakenText; // actual text object
     [SerializeField] private float displayFlashTime = 2f; // duration text is visible
     [SerializeField] private float characterRevealDelay = 0.05f; // optional fine-tune
-    
+
+    [Header("Boss Flash UI")]
+    [SerializeField] private GameObject bossFlashUI;
+    [SerializeField] private float bossFlashDuration;
+    [SerializeField] private int bossFlashCount;
+    [SerializeField] private List<string> bossScenes;
+
     private Queue<string> dialogueQueue = new Queue<string>();
     private bool isTalking = false;
     private bool awaitingControlClose = false;
@@ -64,6 +70,10 @@ public class UIManager : MonoBehaviour
     //added
     private int previousEnemyCount = -1;
     private int previousCollectibleCount = -1;
+
+    //added for dialogue skip issue
+    private float dialogueInputDelay = 0.2f;
+    private float dialogueTimer = 0f;
 
     //singleton reference
     public static UIManager Instance { get; private set; }
@@ -85,7 +95,7 @@ public class UIManager : MonoBehaviour
         }
 
         //playerSkillManager = FindFirstObjectByType<PlayerSkillManager>();
-        
+
         gameOverScreen.SetActive(false);
         pauseScreen.SetActive(false);
         dialogueUI.SetActive(false);
@@ -101,6 +111,18 @@ public class UIManager : MonoBehaviour
 
         foreach (var collectible in GameObject.FindGameObjectsWithTag("Collectible"))
             RegisterCollectible(collectible);
+
+        //added for NPC skipping line0 issue
+        justClosedControlsUI = false;
+        awaitingControlClose = false;
+        isTalking = false;
+
+        // Optional: clear dialogue queue just in case
+        dialogueQueue.Clear();
+
+        string currentScene = SceneManager.GetActiveScene().name;
+        if (bossFlashUI != null && bossScenes.Contains(currentScene))
+            StartCoroutine(FlashBossUI());
     }
 
     private IEnumerator DelayedSkillApply()
@@ -126,10 +148,24 @@ public class UIManager : MonoBehaviour
         if (gameOverScreen.activeInHierarchy || skillSelectionPanel.activeInHierarchy)
             return;
 
+        /*
         //handles dialogue portion
         if (isTalking && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)))
         {
             DisplayNextLine();
+        }
+        */
+
+        // Increment timer every frame if dialogue is active
+        if (isTalking)
+        {
+            dialogueTimer += Time.unscaledDeltaTime;
+
+            if (dialogueTimer >= dialogueInputDelay && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)))
+            {
+                DisplayNextLine();
+                dialogueTimer = 0f; // Optional: reset timer after each advance
+            }
         }
         else if (awaitingControlClose && controlsUI.activeInHierarchy && (Input.GetKeyDown(KeyCode.E) || Input.GetKeyDown(KeyCode.Return)))
         {
@@ -139,10 +175,10 @@ public class UIManager : MonoBehaviour
             StartCoroutine(ResetJustClosedFlag());
         }
 
-        if(Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             //if pause screen already active unpause and vice versa
-            if(pauseScreen.activeInHierarchy)
+            if (pauseScreen.activeInHierarchy)
                 PauseGame(false);
             else
                 PauseGame(true);
@@ -152,11 +188,15 @@ public class UIManager : MonoBehaviour
     #region DIALOGUE
     public void StartDialogue(string[] lines)
     {
+        Debug.Log("StartDialogue called with " + lines.Length + " lines");
         if (lines == null || lines.Length == 0)
             return;
 
         if (controlsUI.activeInHierarchy || awaitingControlClose || justClosedControlsUI)
+        {
+            Debug.Log("Dialogue blocked by control flags.");
             return;
+        }
 
         dialogueQueue.Clear();
         foreach (string line in lines)
@@ -167,12 +207,14 @@ public class UIManager : MonoBehaviour
         dialogueUI.SetActive(true);
         isTalking = true;
         awaitingControlClose = false;
+        dialogueTimer = 0f; // prevent accidental immediate input
 
         DisplayNextLine();
     }
 
     private void DisplayNextLine()
     {
+        Debug.Log("DisplayNextLine called. Queue count: " + dialogueQueue.Count);
         if (dialogueQueue.Count == 0)
         {
             EndDialogue();
@@ -234,9 +276,9 @@ public class UIManager : MonoBehaviour
     {
         Application.Quit(); //quits the game (only works on build)
 
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.EditorApplication.isPlaying = false; //exits play mode (only executed in editor)
-        #endif
+#endif
     }
     #endregion 
 
@@ -512,10 +554,10 @@ public class UIManager : MonoBehaviour
             yield return StartCoroutine(ShowAwakenFlash($"{skill.name.ToUpper()} AWAKENED"));
             HideSkillSelectionUI();
         }
-        
+
         else
         {
-            
+
             //this is the one causing null reference error prior to fix
             if (PlayerSkillManager.instance.HasSkill(skill.name))
             {
@@ -530,7 +572,7 @@ public class UIManager : MonoBehaviour
                 //return;
                 yield break;
             }
-            
+
         }
     }
 
@@ -608,10 +650,10 @@ public class UIManager : MonoBehaviour
     {
         if (warningUI != null)
         {
-        warning.text = message;
-        warningUI.SetActive(true);
-        yield return new WaitForSecondsRealtime(warningFlashTime);
-        warningUI.SetActive(false);
+            warning.text = message;
+            warningUI.SetActive(true);
+            yield return new WaitForSecondsRealtime(warningFlashTime);
+            warningUI.SetActive(false);
         }
     }
 
@@ -619,22 +661,22 @@ public class UIManager : MonoBehaviour
     {
         if (warningUI != null)
         {
-        Debug.Log("Flash start1");
-        awakenUI.SetActive(true);
-        awakenText.text = ""; // clear previous text
+            Debug.Log("Flash start1");
+            awakenUI.SetActive(true);
+            awakenText.text = ""; // clear previous text
 
-        // Animate character-by-character
-        for (int i = 0; i < message.Length; i++)
-        {
-            awakenText.text += message[i];
-            yield return new WaitForSecondsRealtime(characterRevealDelay);
-        }
+            // Animate character-by-character
+            for (int i = 0; i < message.Length; i++)
+            {
+                awakenText.text += message[i];
+                yield return new WaitForSecondsRealtime(characterRevealDelay);
+            }
 
-        // Wait for full message display
-        yield return new WaitForSecondsRealtime(displayFlashTime);
+            // Wait for full message display
+            yield return new WaitForSecondsRealtime(displayFlashTime);
 
-        Debug.Log("Flash start2");
-        awakenUI.SetActive(false);
+            Debug.Log("Flash start2");
+            awakenUI.SetActive(false);
         }
     }
 
@@ -684,5 +726,18 @@ public class UIManager : MonoBehaviour
         awakenUI.SetActive(false);
     }
     */
+    #endregion
+
+    #region BOSS FLASH
+    private IEnumerator FlashBossUI()
+    {
+        for (int i = 0; i < bossFlashCount; i++)
+        {
+            bossFlashUI.SetActive(true);
+            yield return new WaitForSeconds(bossFlashDuration);
+            bossFlashUI.SetActive(false);
+            yield return new WaitForSeconds(bossFlashDuration);
+        }
+    }
     #endregion
 }

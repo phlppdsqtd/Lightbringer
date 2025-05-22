@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Lightbringer.sln"
+    "dotnet.defaultSolution": "Lightbringer.sln",
+    "FSharp.suggestGitignore": false
 }

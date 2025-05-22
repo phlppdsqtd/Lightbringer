@@ -146,7 +146,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55487005}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 39f66673cddf1f741a19ae715e7884df, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: c68405959e463cf4ab98843cfbf39596, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -464,7 +464,7 @@ GameObject:
   - component: {fileID: 1288481329}
   - component: {fileID: 1288481328}
   m_Layer: 5
-  m_Name: Canvas
+  m_Name: UICanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
