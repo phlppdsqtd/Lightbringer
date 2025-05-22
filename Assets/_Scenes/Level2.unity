@@ -6475,10 +6475,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lightball
       objectReference: {fileID: 0}
-    - target: {fileID: 4794004390250392952, guid: d6d3a4c7d6b4eee46a53557949f06cf4, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7585329017133520959, guid: d6d3a4c7d6b4eee46a53557949f06cf4, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1
