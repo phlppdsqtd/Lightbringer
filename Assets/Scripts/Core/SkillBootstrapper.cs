@@ -10,17 +10,6 @@ public class SkillBootstrapper : MonoBehaviour
         {
             GameObject skillManagerObject = Instantiate(playerSkillManagerPrefab);
             DontDestroyOnLoad(skillManagerObject);
-            Debug.Log("PlayerSkillManager instantiated.");
-        }
-
-        SetupSkillSpecificManagers();
-    }
-
-    private void SetupSkillSpecificManagers()
-    {
-        if (PlayerSkillManager.instance != null)
-        {
-            //Debug.Log("Skill manager is ready to handle skill-related tasks.");
         }
     }
 }

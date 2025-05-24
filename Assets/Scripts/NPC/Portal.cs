@@ -79,21 +79,16 @@ public class Portal : MonoBehaviour
     {
         ShowMessage(msg);
         yield return new WaitForSeconds(messageDisplayTime);
-        //SceneManager.LoadScene(nextSceneName);
 
-        // Award skill point if first time completing this level
         string currentSceneName = SceneManager.GetActiveScene().name;
         LevelUnlockManager.instance.MarkLevelComplete(currentSceneName);
 
-        // Show the skill UI
-        UIManager.Instance.ShowSkillSelectionUI();  // Make sure this function exists and enables the UI panel
+        UIManager.Instance.ShowSkillSelectionUI();
 
-        // Wait until player closes the skill UI before proceeding
-        while (UIManager.Instance.IsSkillUIOpen()) // You must implement this check
+        while (UIManager.Instance.IsSkillUIOpen())
         {
             yield return null;
         }
-        Debug.Log("Loading next scene...");
         SceneManager.LoadScene(nextSceneName);
     }
 }

@@ -27,7 +27,6 @@ public class PlayerSkillManager : MonoBehaviour
         }
     }
 
-    // Attempts to unlock a skill. Returns true if successful.
     public bool TryUnlockSkill(Skill skill)
     {
         if (skill == null || unlockedSkills.Contains(skill.name))
@@ -36,16 +35,13 @@ public class PlayerSkillManager : MonoBehaviour
         int skillPoints = LevelUnlockManager.instance.GetSkillPoints();
         if (skillPoints <= 0)
         {
-            Debug.LogWarning("Not enough skill points to unlock this skill.");
-            return false; // <-- NEW: inform caller of failure
+            return false;
         }
 
-        // Spend point and unlock
         LevelUnlockManager.instance.SpendSkillPoint();
         unlockedSkills.Add(skill.name);
         SaveUnlockedSkills();
 
-        Debug.Log($"Skill unlocked: {skill.name}");
         OnSkillUnlocked?.Invoke(skill.name);
         return true;
     }
@@ -62,7 +58,6 @@ public class PlayerSkillManager : MonoBehaviour
             ? new List<string>()
             : new List<string>(data.Split(','));
 
-        // Notify listeners for each unlocked skill
         foreach (string skillName in unlockedSkills)
         {
             OnSkillUnlocked?.Invoke(skillName);

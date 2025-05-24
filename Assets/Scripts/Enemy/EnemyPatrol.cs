@@ -34,7 +34,6 @@ public class EnemyPatrol : MonoBehaviour
                 MoveInDirection(-1);
             else
             {
-                //change direction
                 DirectionChange();
             }
         }
@@ -44,7 +43,6 @@ public class EnemyPatrol : MonoBehaviour
                 MoveInDirection(1);
             else
             {
-                //change direction
                 DirectionChange();
             }
         }
@@ -69,19 +67,13 @@ public class EnemyPatrol : MonoBehaviour
     {
         idleTimer = 0;
         anim.SetBool("moving", true);
-
-        //make enemy face direction
-        //enemy.localScale = new Vector3(Mathf.Abs(initScale.x) * _direction, initScale.y, initScale.z);
-        //enemy.localScale = new Vector3(Mathf.Sign(initScale.x) * _direction * Mathf.Abs(initScale.x), initScale.y, initScale.z);
         enemy.localScale = new Vector3(-_direction * Mathf.Abs(initScale.x), initScale.y, initScale.z);
-
-        //move in that direction
         enemy.position = new Vector3(enemy.position.x + Time.deltaTime * _direction * speed,
             enemy.position.y, enemy.position.z);
     }
 
-        public float GetDirection()
+    public float GetDirection()
     {
-        return Mathf.Sign(enemy.localScale.x); // or however you store direction
+        return Mathf.Sign(enemy.localScale.x);
     }
 }

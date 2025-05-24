@@ -5,7 +5,6 @@ public class RangedEnemy : MonoBehaviour
     [Header ("Attack Parameters")]
     [SerializeField] private float attackCooldown;
     [SerializeField] private float range;
-    //[SerializeField] private int damage;
 
     [Header ("Ranged Attack")]
     [SerializeField] private Transform firepoint;
@@ -22,30 +21,19 @@ public class RangedEnemy : MonoBehaviour
     [Header ("Fireball Sound")]
     [SerializeField] private AudioClip fireballSound;
 
-    //references
     private Animator anim;
     private Health playerHealth;
-    //private EnemyPatrol enemyPatrol;
-
-    // New:
     private RangedEnemyPatrol enemyPatrol;
 
     private void Awake()
     {
         anim = GetComponent<Animator>();
-        //enemyPatrol = GetComponentInParent<EnemyPatrol>();
-
-        // New in Awake():
         enemyPatrol = GetComponentInParent<RangedEnemyPatrol>();
     }
 
-    
-    //original
     private void Update()
     {
         cooldownTimer += Time.deltaTime;
-
-        //attack only when player in sight
         if (PlayerInSight())
         {
             if (cooldownTimer >= attackCooldown && playerHealth != null && playerHealth.currentHealth > 0)
@@ -54,34 +42,9 @@ public class RangedEnemy : MonoBehaviour
                 anim.SetTrigger("rangedAttack");
             }
         }
-        
         if (enemyPatrol != null)
             enemyPatrol.enabled = !PlayerInSight();
     }
-    
-
-    /*
-    private void Update()
-    {
-        cooldownTimer += Time.deltaTime;
-
-        bool inSight = PlayerInSight();
-
-        if (enemyPatrol != null)
-        {
-            if (inSight)
-                enemyPatrol.Pause(); // Stop movement but allow control
-            else
-                enemyPatrol.enabled = true; // Re-enable patrol if not in sight
-        }
-
-        if (inSight && cooldownTimer >= attackCooldown && playerHealth != null && playerHealth.currentHealth > 0)
-        {
-            cooldownTimer = 0;
-            anim.SetTrigger("rangedAttack");
-        }
-    }
-    */
 
     private void RangedAttack()
     {
@@ -100,23 +63,6 @@ public class RangedEnemy : MonoBehaviour
         }
         return 0;
     }
-
-    /*
-    //original
-    private bool PlayerInSight()
-    {
-        RaycastHit2D hit = Physics2D.BoxCast(boxCollider.bounds.center + transform.right * range * transform.localScale.x * colliderDistance,
-        new Vector3(boxCollider.bounds.size.x * range, boxCollider.bounds.size.y, boxCollider.bounds.size.z),
-        0, Vector2.left, 0, playerLayer);
-
-        if (hit.collider != null)
-        {
-        playerHealth = hit.transform.GetComponent<Health>();
-        }
-
-        return hit.collider != null;
-    }
-    */
 
     private void OnDrawGizmos()
     {
@@ -140,6 +86,4 @@ public class RangedEnemy : MonoBehaviour
 
         return hit.collider != null;
     }
-
-    
 }

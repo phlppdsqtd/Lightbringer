@@ -17,7 +17,7 @@ public class NPCDialogueTrigger : MonoBehaviour
 
         if (animator != null)
         {
-            animator.SetBool("idle", true); // Start in idle state
+            animator.SetBool("idle", true);
         }
     }
 
@@ -30,7 +30,6 @@ public class NPCDialogueTrigger : MonoBehaviour
             isTalking = true;
         }
 
-        // Reset to idle if dialogue & controls are both inactive and was previously talking
         if (isTalking && !uiManager.IsTalking() && !uiManager.IsControlsUIActive())
         {
             ResetToIdleAnimation();
@@ -58,8 +57,8 @@ public class NPCDialogueTrigger : MonoBehaviour
     {
         if (animator != null)
         {
-            animator.SetBool("idle", false);      // Not idle anymore
-            animator.SetTrigger("activate");      // Play talk animation
+            animator.SetBool("idle", false);
+            animator.SetTrigger("activate");
         }
     }
 
@@ -67,8 +66,8 @@ public class NPCDialogueTrigger : MonoBehaviour
     {
         if (animator != null)
         {
-            animator.SetBool("idle", true);       // Return to idle
-            animator.ResetTrigger("activate");    // Reset activate trigger
+            animator.SetBool("idle", true);
+            animator.ResetTrigger("activate");
         }
     }
 }

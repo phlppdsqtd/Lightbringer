@@ -22,7 +22,7 @@ public class PlayerAttack : MonoBehaviour
     private UIManager uiManager;
     private Animator anim;
     private PlayerMovement playerMovement;
-    private float cooldownTimer = Mathf.Infinity; //so that cooldown is not 0 at start of game; player can attack immediately
+    private float cooldownTimer = Mathf.Infinity;
 
     private void Awake()
     {
@@ -30,16 +30,6 @@ public class PlayerAttack : MonoBehaviour
         anim = GetComponent<Animator>();
         playerMovement = GetComponent<PlayerMovement>();
         uiManager = FindFirstObjectByType<UIManager>();
-        
-        // Delay this until the instance is available
-        //playerSkillManager = FindFirstObjectByType<PlayerSkillManager>();
-
-        /*
-        if (playerSkillManager == null)
-        {
-            Debug.LogError("PlayerSkillManager instance not found! Make sure it exists in the scene.");
-        }
-        */
     }
 
     private void Start()
@@ -54,10 +44,6 @@ public class PlayerAttack : MonoBehaviour
             yield return null;
 
         playerSkillManager = PlayerSkillManager.instance;
-
-        // (Optional) If you want to check whether Fireball is unlocked at start:
-        if (playerSkillManager.HasSkill("Fireball"))
-            Debug.Log("Fireball skill unlocked!");
     }
 
     private void Update()
@@ -67,13 +53,13 @@ public class PlayerAttack : MonoBehaviour
 
         if(Input.GetMouseButton(0) && cooldownTimer > attackCooldown && playerMovement.canAttack())
         {
-            if(Time.timeScale != 0 && mana.UseMana(manaCost)) //added since attack still functions if paused
+            if(Time.timeScale != 0 && mana.UseMana(manaCost))
             {    
                 Attack();
             }
             else
             {
-                uiManager.FlashManaBar(); //this line to trigger UI feedback
+                uiManager.FlashManaBar();
             }
         }
 
@@ -101,17 +87,8 @@ public class PlayerAttack : MonoBehaviour
         anim.SetTrigger("attack");
         cooldownTimer = 0;
 
-        //orig code
         lightballs[FindLightball()].transform.position = firePoint.position;
         lightballs[FindLightball()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
-
-        /*
-        //revised >> error was in sorting layer
-        int fireballIndex = FindFireball();
-        lightballs[fireballIndex].transform.position = firePoint.position;
-        lightballs[fireballIndex].SetActive(true); // Important: make sure it gets activated
-        lightballs[fireballIndex].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
-        */
     }
 
     private void FireballSkill()
@@ -123,7 +100,6 @@ public class PlayerAttack : MonoBehaviour
 
         int index = FindFireball();
         fireballSkill[index].transform.position = firePoint.position;
-        //fireballSkill[index].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x));
         fireballSkill[FindFireball()].GetComponent<Projectile>().SetDirection(Mathf.Sign(transform.localScale.x), true);
     }
 

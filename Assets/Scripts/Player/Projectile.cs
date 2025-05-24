@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
     private bool hit;
     private BoxCollider2D boxCollider;
     private Animator anim;
-    private float lifetime; //so that fireball doesn't exist infinitely if doesn't collide with anything
+    private float lifetime;
     private bool isSkillProjectile;
 
     private void Awake()
@@ -25,7 +25,7 @@ public class Projectile : MonoBehaviour
         transform.Translate(movementSpeed, 0, 0);
 
         lifetime += Time.deltaTime;
-        if (lifetime > 2.5) gameObject.SetActive(false); //set how long lifetime is
+        if (lifetime > 2.5) gameObject.SetActive(false);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -34,11 +34,6 @@ public class Projectile : MonoBehaviour
         boxCollider.enabled = false;
         anim.SetTrigger("explode");
 
-        /*
-        if (collision.tag == "Enemy")
-            collision.GetComponent<Health>().TakeDamage(damage);
-        */
-
         if (collision.tag == "Enemy")
         {
             float appliedDamage = isSkillProjectile ? damageSkill : damage;
@@ -46,16 +41,15 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    public void SetDirection(float _direction, bool isSkill = false) //added
+    public void SetDirection(float _direction, bool isSkill = false)
     {
         lifetime = 0;
         direction = _direction;
         gameObject.SetActive(true);
         hit = false;
         boxCollider.enabled = true;
-        isSkillProjectile = isSkill; //added
+        isSkillProjectile = isSkill;
 
-        //check localScale.x and if it doesn't match direction, reverses it
         float localScaleX = transform.localScale.x;
         if (Mathf.Sign(localScaleX) != _direction)
             localScaleX = -localScaleX;

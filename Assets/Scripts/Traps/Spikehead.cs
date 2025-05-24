@@ -22,7 +22,6 @@ public class Spikehead : EnemyDamage
 
     private void Update()
     {
-        //move spikehead to destination only if attacking
         if (attacking)
             transform.Translate(destination * Time.deltaTime * speed);
         else
@@ -37,7 +36,6 @@ public class Spikehead : EnemyDamage
     {
         CalculateDirections();
 
-        //check if spikehead sees player in all 4 directions
         for (int i = 0; i < directions.Length; i++)
         {
             Debug.DrawRay(transform.position, directions[i], Color.red);
@@ -54,15 +52,15 @@ public class Spikehead : EnemyDamage
 
     private void CalculateDirections()
     {
-        directions[0] = transform.right * range; //right direction
-        directions[1] = -transform.right * range; //left direction
-        directions[2] = transform.up * range; //up direction
-        directions[3] = -transform.up * range; //down direction
+        directions[0] = transform.right * range;
+        directions[1] = -transform.right * range;
+        directions[2] = transform.up * range;
+        directions[3] = -transform.up * range;
     }
 
     private void Stop()
     {
-        destination = transform.position; //set destination as current pos so it doesnt move
+        destination = transform.position;
         attacking = false;
     }
 

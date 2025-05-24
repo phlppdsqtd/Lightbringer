@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 public class LevelSelectButton : MonoBehaviour
 {
     [SerializeField] private int levelNumberToLoad;
-    [SerializeField] private GameObject bgLock;   // Reference to BG1-Lock
-    [SerializeField] private GameObject lockIcon; // Reference to Lock1
+    [SerializeField] private GameObject bgLock;
+    [SerializeField] private GameObject lockIcon;
     [SerializeField] private Button button;
 
     private void Start()
@@ -20,7 +20,7 @@ public class LevelSelectButton : MonoBehaviour
         string sceneToLoad = "Level" + levelNumberToLoad;
 
         if (SceneManager.GetActiveScene().name == sceneToLoad)
-            return; // Already in the scene, don’t reload
+            return;
 
         if (LevelUnlockManager.instance.IsLevelUnlocked(levelNumberToLoad))
         {

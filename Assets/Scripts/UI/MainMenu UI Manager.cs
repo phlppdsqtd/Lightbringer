@@ -28,7 +28,7 @@ public class MainMenuUIManager : MonoBehaviour
 
     public void NewGame()
     {
-        SceneManager.LoadScene(1); // or whatever your level 1 index is
+        SceneManager.LoadScene(1);
     }
 
     public void LevelSelect()
@@ -88,13 +88,11 @@ public class MainMenuUIManager : MonoBehaviour
 
     public void Proceed()
     {
-        // Delete level unlock keys
         for (int i = 1; i <= 6; i++)
         {
             PlayerPrefs.DeleteKey("Level" + i);
         }
 
-        // Delete level completion keys
         string[] levelNames = { "Level1", "Level2", "Level3", "Level4", "Level5", "Level6" };
         foreach (string levelName in levelNames)
         {
@@ -102,25 +100,19 @@ public class MainMenuUIManager : MonoBehaviour
             PlayerPrefs.DeleteKey(completedKey);
         }
 
-        // Delete unlocked skills
         if (PlayerSkillManager.instance != null)
         {
             PlayerSkillManager.instance.unlockedSkills.Clear();
         }
         PlayerPrefs.DeleteKey("UnlockedSkills");
-
-        // Reset skill points
         PlayerPrefs.SetInt("SkillPoints", 0);
-
         PlayerPrefs.Save();
 
-        // Refresh level UI buttons
         foreach (var button in levelButtons)
         {
             button.Refresh();
         }
 
-        // Restore UI
         resetUI.SetActive(false);
         mainMenuUI.SetActive(true);
         mainMenuArrow.ResetArrowPosition();

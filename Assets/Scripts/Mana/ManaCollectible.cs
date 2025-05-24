@@ -27,7 +27,6 @@ public class ManaCollectible : MonoBehaviour
                 
             gameObject.SetActive(false);
             
-            //update UI counter for collectible
             if (UIManager.Instance != null && gameObject.CompareTag("Collectible"))
                 UIManager.Instance.UnregisterCollectible(gameObject);
         }

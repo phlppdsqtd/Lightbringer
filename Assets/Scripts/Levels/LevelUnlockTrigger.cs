@@ -8,7 +8,7 @@ public class LevelUnlockTrigger : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            //LevelUnlockManager.instance.UnlockLevel(levelNumberToUnlock);
+
         }
     }
 }

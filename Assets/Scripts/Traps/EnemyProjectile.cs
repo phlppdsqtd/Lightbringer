@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyProjectile : EnemyDamage //will damage the player every time they touch
+public class EnemyProjectile : EnemyDamage
 {
     [SerializeField] private float speed;
     [SerializeField] private float resetTime;
@@ -28,9 +28,7 @@ public class EnemyProjectile : EnemyDamage //will damage the player every time t
     {
         if (hit) return;
         float movementSpeed = speed * Time.deltaTime;
-        //transform.Translate(movementSpeed, 0, 0);
         transform.Translate(-Vector3.right * movementSpeed, Space.Self);
-        //transform.Translate(-transform.right * speed * Time.deltaTime, Space.World);
 
         lifetime += Time.deltaTime;
         if (lifetime > resetTime)
@@ -40,13 +38,13 @@ public class EnemyProjectile : EnemyDamage //will damage the player every time t
     protected override void OnTriggerEnter2D(Collider2D collision)
     {
         hit = true;
-        base.OnTriggerEnter2D(collision); //execute logic from parent script first
+        base.OnTriggerEnter2D(collision);
         coll.enabled = false;
 
         if(anim != null)
-            anim.SetTrigger("enemy_explode"); //when the object is a ENEMY fireball explode it
+            anim.SetTrigger("enemy_explode");
         else
-            gameObject.SetActive(false); //when this hits any object deactivate arrow
+            gameObject.SetActive(false);
     }
 
     private void Deactivate()

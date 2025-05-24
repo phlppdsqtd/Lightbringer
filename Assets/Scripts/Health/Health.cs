@@ -5,7 +5,7 @@ public class Health : MonoBehaviour
 {
     [Header ("Health")]
     [SerializeField] private float startingHealth;
-    public float currentHealth { get; private set;} //added this since set to public
+    public float currentHealth { get; private set;}
     private Animator anim;
     private bool dead;
 
@@ -23,9 +23,9 @@ public class Health : MonoBehaviour
     [SerializeField] private AudioClip hurtSound;
 
     [Header("Mana Drop (Enemy Only)")]
-    [SerializeField] private GameObject manaDropPrefab; //mana collectible prefab
-    [SerializeField] private bool isEnemy = false; //flag to indicate if this is an enemy
-    [SerializeField] private Transform dropPoint; //point where the mana drop should spawn
+    [SerializeField] private GameObject manaDropPrefab;
+    [SerializeField] private bool isEnemy = false;
+    [SerializeField] private Transform dropPoint;
 
     private void Awake()
     {
@@ -46,25 +46,20 @@ public class Health : MonoBehaviour
         currentHealth = Mathf.Clamp(currentHealth - _damage, 0, startingHealth);
 
         if (currentHealth > 0) {
-            //player hurt
             anim.SetTrigger("hurt");
-            //iframes
             StartCoroutine(Invulnerability());
             SoundManager.instance.PlaySound(hurtSound);
         }
         else {
             if (!dead)
             {
-                //deactive all attached component classes
                 foreach (Behaviour component in components)
                 {
                     component.enabled = false;
                 }
 
-                //check if enemy and drop mana
                 if (isEnemy && manaDropPrefab != null)
                 {
-                    //always drop mana
                     Instantiate(manaDropPrefab, dropPoint != null ? dropPoint.position : transform.position, Quaternion.identity);
                 }
                 
@@ -73,7 +68,6 @@ public class Health : MonoBehaviour
                     anim.SetBool("grounded", true);
                 }
 
-                //update UI counter for enemy
                 if (UIManager.Instance != null)
                 {
                     UIManager.Instance.UnregisterEnemy(gameObject);
@@ -83,7 +77,6 @@ public class Health : MonoBehaviour
                 dead = true;
                 SoundManager.instance.PlaySound(deathSound);
             }
-
         }
     }
 
@@ -100,7 +93,6 @@ public class Health : MonoBehaviour
         anim.Play("Idle");
         StartCoroutine(Invulnerability());
 
-        //activate all attached component classes
         foreach (Behaviour component in components)
         {
             component.enabled = true;
@@ -110,7 +102,7 @@ public class Health : MonoBehaviour
     private IEnumerator Invulnerability()
     {
         invulnerable = true;
-        Physics2D.IgnoreLayerCollision(10,11,true); //player at layer 10, enemy at layer 11
+        Physics2D.IgnoreLayerCollision(10,11,true);
         for (int i=0; i < numberOfFlashes; i++) {
             spriteRend.color = new Color (1,0,0,0.5f);
             yield return new WaitForSeconds(iFramesDuration / (numberOfFlashes * 2));

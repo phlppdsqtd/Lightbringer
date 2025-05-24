@@ -7,5 +7,5 @@ public class Skill : ScriptableObject
     public string description;
     public Sprite icon;
     public Skill[] prerequisites;
-    public bool isUnlocked; // Used during runtime to track state
+    public bool isUnlocked;
 }

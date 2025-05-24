@@ -7,7 +7,6 @@ public class Room : MonoBehaviour
 
     private void Awake()
     {
-        //save the initial positions of the enemies
         initialPosition = new Vector3[enemies.Length];
         for (int i = 0; i < enemies.Length; i++)
         {
@@ -18,7 +17,6 @@ public class Room : MonoBehaviour
 
     public void ActivateRoom(bool _status)
     {
-        //activate/deactivate enemies
         for (int i = 0; i < enemies.Length; i++)
         {
             if(enemies[i] != null)

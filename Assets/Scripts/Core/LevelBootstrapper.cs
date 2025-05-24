@@ -13,23 +13,17 @@ public class LevelBootstrapper : MonoBehaviour
             if (levelUnlockManagerPrefab != null)
             {
                 GameObject obj = Instantiate(levelUnlockManagerPrefab);
-                obj.name = "LevelUnlockManager"; // Optional: consistent naming
+                obj.name = "LevelUnlockManager";
                 DontDestroyOnLoad(obj);
-                Debug.Log("LevelUnlockManager instantiated.");
-            }
-            else
-            {
-                Debug.LogWarning("LevelUnlockManager prefab is missing in LevelBootstrapper.");
             }
         }
 
-        // Wait one frame to ensure the instance is fully initialized
         StartCoroutine(WaitAndInitialize());
     }
 
     private IEnumerator WaitAndInitialize()
     {
-        yield return null; // Wait for LevelUnlockManager to finish Awake()
+        yield return null;
         InitializeLevelDataIfReady();
     }
 

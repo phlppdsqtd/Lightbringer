@@ -18,7 +18,6 @@ public class MeleeEnemy : MonoBehaviour
     [Header ("Attack Sound")]
     [SerializeField] private AudioClip attackSound;
     
-    //references
     private Animator anim;
     private Health playerHealth;
     private EnemyPatrol enemyPatrol;
@@ -32,8 +31,6 @@ public class MeleeEnemy : MonoBehaviour
     private void Update()
     {
         cooldownTimer += Time.deltaTime;
-
-        //attack only when player in sight
         if (PlayerInSight())
         {
             if (cooldownTimer >= attackCooldown && playerHealth != null && playerHealth.currentHealth > 0)
@@ -43,7 +40,6 @@ public class MeleeEnemy : MonoBehaviour
                 SoundManager.instance.PlaySound(attackSound);
             }
         }
-
         if (enemyPatrol != null)
             enemyPatrol.enabled = !PlayerInSight();
     }
@@ -71,10 +67,8 @@ public class MeleeEnemy : MonoBehaviour
 
     private void DamagePlayer()
     {
-        //if player still in range damage him
         if (PlayerInSight())
         {
-            //damage player health
             playerHealth.TakeDamage(damage);
         }
     }
